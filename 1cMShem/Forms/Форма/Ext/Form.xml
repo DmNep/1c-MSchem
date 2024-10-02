@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>mShem</v8:content>
+		</v8:item>
+	</Title>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<Page name="Основная" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="ОсновнаяРасширеннаяПодсказка" id="9"/>
+					<ChildItems>
+						<UsualGroup name="ТекстМодуляГруппа" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текст</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текст модуля группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowLeftMargin>false</ShowLeftMargin>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ТекстМодуляГруппаРасширеннаяПодсказка" id="64"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаШапка" id="65">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа шапка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа шапка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="66"/>
+									<ChildItems>
+										<Button name="СформироватьСхему" id="4">
+											<Type>UsualButton</Type>
+											<DefaultButton>true</DefaultButton>
+											<CommandName>Form.Command.СформироватьСхему</CommandName>
+											<ExtendedTooltip name="СформироватьСхемуРасширеннаяПодсказка" id="5"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<TextDocumentField name="ТекстМодуля" id="1">
+									<DataPath>Объект.ТекстМодуля</DataPath>
+									<DefaultItem>true</DefaultItem>
+									<TitleLocation>Top</TitleLocation>
+									<Width>6</Width>
+									<Height>15</Height>
+									<ContextMenu name="ТекстМодуляКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="ТекстМодуляРасширеннаяПодсказка" id="3"/>
+								</TextDocumentField>
+								<TextDocumentField name="Схема" id="89">
+									<DataPath>Объект.Схема</DataPath>
+									<Width>6</Width>
+									<Height>5</Height>
+									<ContextMenu name="СхемаКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="СхемаРасширеннаяПодсказка" id="91"/>
+								</TextDocumentField>
+							</ChildItems>
+						</UsualGroup>
+						<PictureField name="РезультатОбработки" id="60">
+							<DataPath>РезультатОбработки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Графическая схема</v8:content>
+								</v8:item>
+							</Title>
+							<Width>25</Width>
+							<Zoomable>true</Zoomable>
+							<ContextMenu name="РезультатОбработкиКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="РезультатОбработкиРасширеннаяПодсказка" id="62"/>
+						</PictureField>
+					</ChildItems>
+				</Page>
+				<Page name="Настройки" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="11"/>
+					<ChildItems>
+						<UsualGroup name="НастройкиPlantUML" id="87">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>PlantUML</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки plant UML</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="НастройкиPlantUMLРасширеннаяПодсказка" id="88"/>
+							<ChildItems>
+								<UsualGroup name="НастройкиСхемы" id="26">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки схемы</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки схемы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="НастройкиСхемыРасширеннаяПодсказка" id="27"/>
+									<ChildItems>
+										<InputField name="ЗаголовокСхемы" id="46">
+											<DataPath>Объект.ЗаголовокСхемы</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ЗаголовокСхемыКонтекстноеМеню" id="47"/>
+											<ExtendedTooltip name="ЗаголовокСхемыРасширеннаяПодсказка" id="48"/>
+										</InputField>
+										<CheckBoxField name="ОтображатьКонтекст" id="37">
+											<DataPath>Объект.ОтображатьКонтекст</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОтображатьКонтекстКонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="ОтображатьКонтекстРасширеннаяПодсказка" id="39"/>
+										</CheckBoxField>
+										<RadioButtonField name="ВидБлоков" id="92">
+											<DataPath>Объект.ВидБлоков</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Class</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">class</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Card</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">card</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Rectangle</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">rectangle</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ВидБлоковКонтекстноеМеню" id="93"/>
+											<ExtendedTooltip name="ВидБлоковРасширеннаяПодсказка" id="94"/>
+										</RadioButtonField>
+										<InputField name="РастояниеМеждуБлоками" id="76">
+											<DataPath>Объект.РастояниеМеждуБлоками</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="РастояниеМеждуБлокамиКонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="РастояниеМеждуБлокамиРасширеннаяПодсказка" id="78"/>
+										</InputField>
+										<UsualGroup name="ДлиннаСтрок" id="82">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Длинна строк</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Длинна строк</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ДлиннаСтрокРасширеннаяПодсказка" id="83"/>
+											<ChildItems>
+												<CheckBoxField name="СокращатьДлиннуСтрок" id="79">
+													<DataPath>Объект.СокращатьДлиннуСтрок</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СокращатьДлиннуСтрокКонтекстноеМеню" id="80"/>
+													<ExtendedTooltip name="СокращатьДлиннуСтрокРасширеннаяПодсказка" id="81"/>
+												</CheckBoxField>
+												<InputField name="ДлиннаСтрок1" id="84">
+													<DataPath>Объект.ДлиннаСтрок</DataPath>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ДлиннаСтрок1КонтекстноеМеню" id="85"/>
+													<ExtendedTooltip name="ДлиннаСтрок1РасширеннаяПодсказка" id="86"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<CheckBoxField name="ВыделятьПиФЖирным" id="95">
+											<DataPath>Объект.ВыделятьПиФЖирным</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выделять процедуры и функции</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВыделятьПиФЖирнымКонтекстноеМеню" id="96"/>
+											<ExtendedTooltip name="ВыделятьПиФЖирнымРасширеннаяПодсказка" id="97"/>
+										</CheckBoxField>
+										<RadioButtonField name="ТипСвязи" id="73">
+											<DataPath>Объект.ТипСвязи</DataPath>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Орто</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">skinparam linetype ortho</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Полилайн</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">skinparam linetype polyline</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Стандарт</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string"/>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипСвязиКонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="ТипСвязиРасширеннаяПодсказка" id="75"/>
+										</RadioButtonField>
+										<RadioButtonField name="ТипСхемы" id="70">
+											<DataPath>Объект.ТипСхемы</DataPath>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Сверху вниз</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">left to right direction</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Слева на право</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">top to bottom direction</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Авто</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string"/>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипСхемыКонтекстноеМеню" id="71"/>
+											<ExtendedTooltip name="ТипСхемыРасширеннаяПодсказка" id="72"/>
+										</RadioButtonField>
+										<InputField name="ТипСтрелкиСвязи" id="43">
+											<DataPath>Объект.ТипСтрелкиСвязи</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТипСтрелкиСвязиКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="ТипСтрелкиСвязиРасширеннаяПодсказка" id="45"/>
+										</InputField>
+										<InputField name="ТипСтрелкиВозврата" id="40">
+											<DataPath>Объект.ТипСтрелкиВозврата</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТипСтрелкиВозвратаКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="ТипСтрелкиВозвратаРасширеннаяПодсказка" id="42"/>
+										</InputField>
+										<InputField name="ТолщиСтрелкиСвязи" id="28">
+											<DataPath>Объект.ТолщинаСтрелкиСвязи</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТолщиСтрелкиСвязиКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="ТолщиСтрелкиСвязиРасширеннаяПодсказка" id="30"/>
+										</InputField>
+										<InputField name="ТолщинаСтрелкиВозврата" id="17">
+											<DataPath>Объект.ТолщинаСтрелкиВозврата</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТолщинаСтрелкиВозвратаКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ТолщинаСтрелкиВозвратаРасширеннаяПодсказка" id="19"/>
+										</InputField>
+										<InputField name="ЦветСтрелкиСвязи" id="34">
+											<DataPath>Объект.ЦветСтрелкиСвязи</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ЦветСтрелкиСвязиКонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="ЦветСтрелкиСвязиРасширеннаяПодсказка" id="36"/>
+										</InputField>
+										<InputField name="ЦветСтрелкиВозврата" id="31">
+											<DataPath>Объект.ЦветСтрелкиВозврата</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ЦветСтрелкиВозвратаКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="ЦветСтрелкиВозвратаРасширеннаяПодсказка" id="33"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="НастройкиСоединенияСсервером" id="49">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки соединения с сервером</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки соединения ссервером</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="НастройкиСоединенияСсерверомРасширеннаяПодсказка" id="50"/>
+									<ChildItems>
+										<InputField name="РесурсСервера" id="51">
+											<DataPath>РесурсСервера</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="РесурсСервераКонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="РесурсСервераРасширеннаяПодсказка" id="53"/>
+										</InputField>
+										<InputField name="СерверРендеринга" id="54">
+											<DataPath>СерверРендеринга</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СерверРендерингаКонтекстноеМеню" id="55"/>
+											<ExtendedTooltip name="СерверРендерингаРасширеннаяПодсказка" id="56"/>
+										</InputField>
+										<InputField name="ТаймаутСоединения" id="57">
+											<DataPath>ТаймаутСоединения</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаймаутСоединенияКонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="ТаймаутСоединенияРасширеннаяПодсказка" id="59"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="РаботаСФайлами" id="24">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Работа с файлами</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Работа с файлами</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="РаботаСФайламиРасширеннаяПодсказка" id="25"/>
+							<ChildItems>
+								<Button name="СохранитьНастройки" id="20">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СохранитьНастройки</CommandName>
+									<ExtendedTooltip name="СохранитьНастройкиРасширеннаяПодсказка" id="21"/>
+								</Button>
+								<Button name="ЗагрузитьНастройки" id="22">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗагрузитьНастройки</CommandName>
+									<ExtendedTooltip name="ЗагрузитьНастройкиРасширеннаяПодсказка" id="23"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="Версия" id="14">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Версия v.0.01  27-04-2024</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ВерсияКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ВерсияРасширеннаяПодсказка" id="16"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ПостроительСхемыМодуля</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="РезультатОбработки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат обработки (PNG)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РесурсСервера" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ресурс сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СерверРендеринга" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер рендеринга</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаймаутСоединения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймаут соединения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Реквизит1" id="6">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьСхему" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать схему</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать схему</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьСхему</Action>
+		</Command>
+		<Command name="СохранитьНастройки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ЗагрузитьНастройки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+	</Commands>
+</Form>
